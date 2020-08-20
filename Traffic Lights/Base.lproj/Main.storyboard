@@ -51,6 +51,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXg-1v-AFR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,6 +69,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="rPO-Dw-xpZ" id="11P-kr-xs7"/>
+                        <outlet property="redLight" destination="22A-bk-Kfo" id="wYQ-w9-Du2"/>
+                        <outlet property="startButton" destination="Xp8-rY-smJ" id="VB3-rU-bBx"/>
+                        <outlet property="yellowLight" destination="BPQ-FF-baN" id="9Jy-Rw-cA0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
