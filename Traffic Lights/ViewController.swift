@@ -29,7 +29,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startButtonTapped(_ sender: Any) {
-        
+        if isOn {
+            print("Lights off")
+            self.isOn = false
+            self.startButton.setTitle("START", for: .normal)
+            
+        }else {
+            print("Lights on")
+            self.isOn = true
+            self.startButton.setTitle("NEXT", for: .normal)
+        }
     }
     
 }
